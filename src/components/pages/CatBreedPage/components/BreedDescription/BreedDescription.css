@@ -1,0 +1,29 @@
+.bdes__container{
+    display: flex;
+    margin-top: 20px;
+    /* font-size: 1.1rem; */
+}
+
+.bdes__img-container{
+    flex: 0 1 50%;
+}
+
+.bdes__description{
+    flex: 0 1 50%;
+}
+
+.bdes__title{
+    margin-top: 0px;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.bdes__details{
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+.bdes__details-raiting{
+    display: grid;
+    grid-template-columns: 170px 300px;
+    margin: 1.2rem 0 1.3rem 0;
+}

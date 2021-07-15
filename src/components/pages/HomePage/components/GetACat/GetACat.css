@@ -1,0 +1,49 @@
+.gac__grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 50px 100px;
+    color: #291507;
+}
+
+.gac__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gac__grid hr {
+    width: 70px;
+    height: 5px;
+    background-color: #291507;
+    margin: 0;
+}
+
+.gac__title{
+    font-size: 2.4rem;
+    width: 400px;
+}
+
+.gac__description{
+    font-size: 1.2rem;
+}
+
+.gac__rm{
+    letter-spacing: 0;
+    font-weight: 500;
+    color: #291507;
+}
+
+.gac__img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.gac__img-grid img{
+    width: 100%;
+}
+
+.gac__img-grid img:nth-child(1){
+    margin-bottom: 20px;
+}

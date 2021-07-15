@@ -1,0 +1,18 @@
+.rtg__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rtg__level {
+    width: 50px;
+    height: 10px;
+    border-radius: 30px;
+}
+
+.rtg__fill{
+    background-color: #544439;
+}
+
+.rtg__empty{
+    background-color: #E0E0E0;
+}
