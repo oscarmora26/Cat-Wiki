@@ -7,6 +7,7 @@ import {
 
 import HomePage from './components/pages/HomePage/HomePage.jsx';
 import CatBreedPage from './components/pages/CatBreedPage/CatBreedPage';
+import PodularBreed from './components/pages/PopularBreeds/PodularBreed';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/breed/:id" component={CatBreedPage} />
+          <Route path="/popular-breed" component={PodularBreed} />
           <Route path="/" component={HomePage} />
         </Switch>
       </div>

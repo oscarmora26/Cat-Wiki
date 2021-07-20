@@ -2,51 +2,50 @@ import './BreedDescription.css'
 import cat from '../../../../../assets/image2.png'
 import Raiting from '../Raiting/Raiting.jsx'
 
-const BreedDescription = () => {
+const BreedDescription = ({breed}) => {
+    // console.log(breeds)
     return (
         <div className="bdes__container">
             <div className="bdes__img-container">
-                <img src={cat} alt="" />
+                <img src={breed.url} alt="" />
             </div>
             <div className="bdes__description">
-                <h1 className="bdes__title" >Abyssinian</h1>
-                <p>The Abyssinian is easy to care for, and a joy to have in your home.
-                    They’re affectionate cats and love both people and other animals.
-                </p>
-                <p className="bdes__details"><strong>Temperament: </strong>Alert, Agile, Energetic, Demanding, Inteligent</p>
-                <p className="bdes__details"><strong>Origin: </strong>United States</p>
-                <p className="bdes__details"><strong>Life Span: </strong>12 - 15 years</p>
+                <h1 className="bdes__title" >{breed.name}</h1>
+                <p>{breed.description}</p>
+                <p className="bdes__details"><strong>Temperament: </strong>{breed.temperament}</p>
+                <p className="bdes__details"><strong>Origin: </strong>{breed.origin}</p>
+                <p className="bdes__details"><strong>Life Span: </strong>{breed.life_span} years</p>
                 <div className="bdes__details-raiting">
                     <strong>Adaptability: </strong>
-                    <Raiting point={5} />
+                    <Raiting point={breed.adaptability} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Affection Level: </strong>
-                    <Raiting point={5} />
+                    <Raiting point={breed.affection_level} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Child Frienly: </strong>
-                    <Raiting point={4} />
+                    <Raiting point={breed.child_friendly} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Grooming: </strong>
-                    <Raiting point={1} />
+                    <Raiting point={breed.grooming} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Inteligence: </strong>
-                    <Raiting point={5} />
+                    <Raiting point={breed.intelligence} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Health Issues: </strong>
-                    <Raiting point={3} />
+                    <Raiting point={breed.health_issues} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Social needs: </strong>
-                    <Raiting point={5} />
+                    <Raiting point={breed.social_needs} />
                 </div>
                 <div className="bdes__details-raiting">
                     <strong>Stranger friendly: </strong>
-                    <Raiting point={3} />
+                    <Raiting point={breed.stranger_friendly} />
                 </div>
             </div>
         </div>

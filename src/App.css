@@ -2,7 +2,19 @@
   max-width: 1250px;
   margin: auto;
   padding: 2rem 3rem 0 3rem;
+  overflow: hidden;
 }
+
+@media(max-width: 400px){
+  .App{
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+
+a{
+  color: black;
+}
+
 /*
 .App-logo {
   height: 40vmin;
