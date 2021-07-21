@@ -1,9 +1,7 @@
 import './BreedDescription.css'
-import cat from '../../../../../assets/image2.png'
 import Raiting from '../Raiting/Raiting.jsx'
 
 const BreedDescription = ({breed}) => {
-    // console.log(breeds)
     return (
         <div className="bdes__container">
             <div className="bdes__img-container">

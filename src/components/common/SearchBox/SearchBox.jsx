@@ -19,7 +19,7 @@ const SearchBox = ({ data }) => {
         <div className="sbox__container">
             <div className="sbox__search-box">
                 <input type="text" name="" id="" placeholder="Enter your breed" className="sbox__form-control"
-                    onClick={() => setBoxVisible(true)} />
+                    onClick={() => setBoxVisible(true)} onBlur={() => setBoxVisible(false)}/>
                 <span className="material-icons sbox__icon">
                     search
                 </span>
@@ -35,10 +35,8 @@ const SearchBox = ({ data }) => {
                         )
                     })
                     }
-
                 </div>
             }
-
         </div>
     )
 }

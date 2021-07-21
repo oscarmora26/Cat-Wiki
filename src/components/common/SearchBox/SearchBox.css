@@ -65,6 +65,11 @@
     background-color: #BDBDBD;
     border-radius: 20px;
     border: 2px solid #f1f2f3;
+    height: 60px;
+}
+
+.sbox__search-select::-webkit-scrollbar-track{
+    background-color: #F2F2F2;
 }
 
 .sbox__search-select-items{
